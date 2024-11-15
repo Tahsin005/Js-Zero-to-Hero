@@ -1,0 +1,12 @@
+#css-image {
+    border: 4px solid pink;
+}
+
+[alt="javascript roadmap"] {
+    border: 4px solid green;
+
+}
+
+p b {
+    display: none;
+}
