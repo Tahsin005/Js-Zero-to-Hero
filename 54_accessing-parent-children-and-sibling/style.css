@@ -1,0 +1,28 @@
+#css-image {
+    border: 4px solid pink;
+}
+
+[alt="javascript roadmap"] {
+    border: 4px solid green;
+
+}
+
+p b {
+    display: none;
+}
+
+[ferdous] { /* using attribute selector */
+    color: red;
+}
+
+.green-link {
+    font-size: 18px;
+    text-decoration-line: none;
+    color: teal;
+    font-family: cursive;
+}
+
+.wavy-link {
+    text-decoration-line: underline;
+    text-decoration-style: wavy;
+}
