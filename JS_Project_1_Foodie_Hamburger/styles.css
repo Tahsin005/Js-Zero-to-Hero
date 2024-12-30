@@ -2,6 +2,10 @@
     box-sizing: border-box;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     margin: 0;
     background-color: #F6F0EB;
@@ -15,10 +19,16 @@ a {
 
 header {
     background-color: #fff;
+
+    padding: 24px 32px;
+}
+
+.header-container {
+    max-width: 1290px;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 24px 32px;
+    margin: 0 auto;
 }
 
 nav a {
@@ -35,6 +45,79 @@ nav a + a {
     width: 50px;
 }
 
-.logo img {
+img {
     width: 100%;
+}
+
+main {
+    padding: 0 24px;
+}
+
+.hero-section {
+    margin-top: 100px;
+}
+
+.img-container {
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.hero-section p {
+    color: #492118;
+    text-align: center;
+    font-size: 24px;
+}
+
+.section {
+    margin-top: 120px;
+}
+
+.section .img-container {
+    max-width: 960px;
+}
+
+.section h2 {
+    color: #492118;
+    font-size: 48px;
+    font-weight: 700;
+    text-align: center;
+}
+
+.go-to-top {
+    text-align: right;
+    max-width: 960px;
+    margin: 0 auto;
+    font-size: 32px;
+    margin-top: 80px;
+}
+
+.go-to-top a {
+    text-decoration: underline;
+}
+
+footer p {
+    text-align: center;
+    color: #858585;
+    font-size: 24px;
+    margin-top: 64px;
+}
+
+@media (max-width: 1200px) {
+    nav a {
+        font-size: 16px;
+    }
+
+    nav a + a {
+        margin-left: 48px;
+    }
+}
+
+@media (max-width: 960px) {
+    nav a {
+        font-size: 12px;
+    }
+
+    nav a + a {
+        margin-left: 32px;
+    }
 }
