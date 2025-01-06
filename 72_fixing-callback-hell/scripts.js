@@ -6,6 +6,9 @@ function makeHttpRequest(method, url) {
         xhr.addEventListener("load", () => {
           resolve(xhr.response)
         });
+        xhr.addEventListener("error", () => {
+            reject('Request failed!')
+        });
     })
 
     xhr.open(method, url);
@@ -20,9 +23,11 @@ makeHttpRequest('GET', 'https://dummyjson.com/users')
     }).then((postsData) => {
         return makeHttpRequest('GET', `https://dummyjson.com/comments/post/${postsData.posts[0].id}`)
     }).then((commentsData) => {
-        console.log(commentsData)
+        return makeHttpRequest('GET', `https://dummyjson.com/users/${commentsData.comments[0].user.id}`)
     }).then((data) => {
         console.log(data)
+    }).catch((err) => {
+        console.log(err);
     })
 
 
@@ -39,7 +44,7 @@ makeHttpRequest('GET', 'https://dummyjson.com/users')
 //           console.log(commentsData.comments[0].user.id);
 //           makeHttpRequest(
 //             "GET",
-//             `https://dummyjson.com/users/${usersData.users[0].id}`,
+//             `https://dummyjson.com/users/${commentsData.comments[0].user.id}`,
 //             (data) => {
 //               console.log(data);
 //             }
