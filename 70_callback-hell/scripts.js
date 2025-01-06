@@ -15,7 +15,7 @@ makeHttpRequest('GET', 'https://dummyjson.com/users', (usersData) => {
     console.log(postsData.posts[0].id)
     makeHttpRequest('GET', `https://dummyjson.com/comments/post/${postsData.posts[0].id}`, (commentsData) => {
       console.log(commentsData.comments[0].user.id)
-      makeHttpRequest('GET', `https://dummyjson.com/users/${usersData.users[0].id}`, (data) => {
+      makeHttpRequest('GET', `https://dummyjson.com/users/${commentsData.comments[0].user.id}`, (data) => {
         console.log(data)
       })
     })
