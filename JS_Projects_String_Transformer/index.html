@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>String Transformer</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts.js" defer></script>
+</head>
+
+<body class="">
+    <div class="py-10 mx-auto">
+        <h1 class="mb-6 text-3xl md:text-5xl font-extrabold text-center text-gray-800">String Transformer</h1>
+
+        <div class="max-w-lg mx-auto bg-white pt-5">
+            <div class="mb-6 text-center">
+                <label class="block text-start mb-2 text-lg font-medium text-gray-700">Enter a
+                    string</label>
+                <input id="string-input" type="text" placeholder="Enter a sentence with spaces (alphanumeric)"
+                    class="w-full py-2 text-lg text-center bg-gray-100 border-gray-400 rounded-lg" />
+            </div>
+
+            <div class="space-y-4 text">
+                <div class="flex flex-col">
+                    <label class="ps-4 bg-black text-white rounded w-28">Lower Case</label>
+                    <span id="lowercase" class="ps-10 py-4 bg-yellow-200 rounded"></span>
+                </div>
+                <div class="flex flex-col">
+                    <label class="ps-4 bg-black text-white rounded w-28">Upper Case</label>
+                    <span id="uppercase" class="ps-10 py-4 bg-yellow-200 rounded"></span>
+                </div>
+                <div class="flex flex-col">
+                    <label class="ps-4 bg-black text-white rounded w-28">Camel Case</label>
+                    <span id="camelcase" class="ps-10 py-4 bg-yellow-200 rounded"></span>
+                </div>
+                <div class="flex flex-col">
+                    <label class="ps-4 bg-black text-white rounded w-28">Pascal Case</label>
+                    <span id="pascalcase" class="ps-10 py-4 bg-yellow-200 rounded"></span>
+                </div>
+                <div class="flex flex-col">
+                    <label class="ps-4 bg-black text-white rounded w-28">Snake Case</label>
+                    <span id="snakecase" class="ps-10 py-4 bg-yellow-200 rounded"></span>
+                </div>
+                <div class="flex flex-col">
+                    <label class="ps-4 bg-black text-white rounded w-28">Kebab Case</label>
+                    <span id="kebabcase" class="ps-10 py-4 bg-yellow-200 rounded"></span>
+                </div>
+                <div class="flex flex-col">
+                    <label class="ps-4 bg-black text-white rounded w-28">Trim</label>
+                    <span id="trim" class="ps-10 py-4 bg-yellow-200 rounded"></span>
+                </div>
+            </div>
+
+
+        </div>
+</body>
+
+</html>
