@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guess The Number</title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.2/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="scripts.js" defer></script>
+</head>
+
+<body class="">
+    <div class="py-10 mx-auto">
+        <h1 class="mb-6 text-6xl font-extrabold text-center text-gray-800">Guess The Number</h1>
+
+        <div class="max-w-md p-8 mx-auto bg-white">
+            <div class="mb-6 text-center">
+                <label for="counter-input" class="block mb-2 text-lg font-medium text-gray-700">Enter a number b/w 0 to
+                    100</label>
+                <input id="guess-input" type="number" placeholder="Type a number"
+                    class="w-full py-2 text-lg text-center bg-gray-100 border-gray-400 rounded-lg" />
+            </div>
+
+            <div class="space-x-4 space-y-4 text-center">
+                <button id="submit-btn"
+                    class="transition-transform duration-200 transform hover:translate-y-[-2px] hover:shadow-lg active:translate-y-0 bg-green-500 hover:bg-green-600 text-white px-6 py-2 rounded-lg font-medium">
+                    Sumbit
+                </button>
+            </div>
+
+            <div class="mt-5 h-28">
+                <div id="message" class="mb-4 text-lg font-medium text-center text-gray-700">
+                </div>
+
+                <div  class="mb-4 text-lg font-medium text-center text-gray-700">Your Guesses: <span id="guesses-so-far">None</span></div>
+
+                <div class="mb-4 text-lg font-medium text-center text-gray-700">Guess Count: <span  id="guess-counter">0</span>
+                </div>
+            </div>
+        </div>
+</body>
+
+</html>
